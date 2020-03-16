@@ -41,7 +41,7 @@ public class HomePageTest {
 	public void verifymessage() {
 		hp.sentTxt(hp.mailid(), "vengi.1225@gmail.com");
 		hp.go().click();
-		Assert.assertTrue(hp.getAttTxt(hp.mailid()).contains("You have Successfully Subscribed to this newsletter"));
+		Assert.assertTrue(hp.getAttTxt(hp.mailid()).contains("You have Successfully Subscribed"));
 	}
 	
 }
